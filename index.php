@@ -137,4 +137,32 @@ foreach ($actors2->films as $value) {
         var_dump('rating : 9');
     }
 }
+
+//prova comadndo protected
+
+class Calciatore {
+    public $name; 
+    public $last_name;
+    protected $palla;
+
+    public function __construct($palla){
+        $this->palla = $palla;
+    }
+
+	public function get_ball(){
+       var_dump('il numero dei palloni d oro è di'. ' '. $this->palla);
+    }
+}
+
+$calciatore = new Calciatore(77);
+$calciatore-> name = ' cristiano';
+$calciatore->last_name = 'ronaldo ';
+$calciatore->get_ball();
+
+
+foreach($calciatore as $persona){
+    var_dump($persona);
+}
+
+
 ?>
