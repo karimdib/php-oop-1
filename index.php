@@ -165,4 +165,31 @@ foreach($calciatore as $persona){
 }
 
 
+//aggiunta comando private
+
+
+class Pugile {
+    public $name;
+    public $surname;
+    private $ko;
+
+    public function __construct($_ko){
+        $this->ko = $_ko;
+    }
+    public function get_ko(){
+        var_dump('ha fatto'. ' '. $this->ko);
+    }
+}
+
+$pugile = new Pugile(44);
+$pugile->name  = 'mike';
+$pugile->surname = 'tyson';
+$pugile ->get_ko();
+
+
+
+foreach($pugile as $lottatore){
+    var_dump($lottatore);
+}
+
 ?>
