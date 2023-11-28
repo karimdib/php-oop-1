@@ -17,7 +17,26 @@ class Production {
         }elseif ($title_film === (int)$title_film) {
             $this->title = 'il film deve essere composto da lettere ';
         }else{
-            'devi digitare un numero come parametro nella funzione ';
+            'devi digitare qualcosa come parametro nella funzione ';
+        }
+    }
+
+    function setLanguage($set_language){
+        if($set_language === (string)$set_language){
+            $this->language = $set_language;
+        }elseif ($set_language === (int)$set_language) {
+            $this->language = 'la lingua deve essere composto da lettere ';
+        }else{
+            'devi digitare qualcosa come parametro nella funzione ';
+        }
+    }
+    function setRating($set_rating){
+        if($set_rating === (int)$set_rating){
+            $this->rating = $set_rating;
+        }elseif ($set_rating === (string)$set_rating) {
+            $this->rating = 'il rating deve essere composto da numeri ';
+        }else{
+            'devi digitare qualcosa come parametro nella funzione ';
         }
     }
     
@@ -34,10 +53,10 @@ class Production {
 }
 
 $films = new Production('tarantino');
-$films->SetTitle(4);
-$films->language = 'english';
+$films->SetTitle('pulp fiction');
+$films->setLanguage('english');
 $films->SetDuration(150);
-$films ->rating= '8';
+$films ->setRating(8);
 
 
 foreach($films as $film){
@@ -45,11 +64,15 @@ foreach($films as $film){
     var_dump($film);
 }
 
-$films2 = new Production ('tarantino');
-$films2-> title = 'Django';
-$films2->language = 'english';
-$films2->SetDuration(165);
-$films2 ->rating= '9';
+$films2 = new Production('tarantino');
+$films2->SetTitle(' django');
+$films2->setLanguage('english');
+$films2->SetDuration(150);
+$films2 ->setRating(9);
+
+foreach($films2 as $film){
+    var_dump($film);
+}
 
 
 
