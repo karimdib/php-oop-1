@@ -195,11 +195,50 @@ class Student{
 }
 
 $student = new Student();
-$student->name = 'mi chiamo karim  e sono nella classe :';
+$student->name = 'mi chiamo karim';
 $student->object = new Cento();
-$student->object->number = 106;
+$student->object->number = [
+    '100',
+    '101',
+    '102',
+    '103',
+    '104',
+    '105',
+    '106',
+    'studenti milgiori'=> ['marco','paolo','francesco']
+];
+foreach($student->object->number as $keys =>  $classes_number){
+    var_dump($classes_number);
+    var_dump($keys);
+}
+ 
 
-var_dump($student->name. ' '. $student->object->number);
 
+class Cantante{
+    public $name;
+    public $surname;
+    public $canzone;
+    public $featuring;
+    private $feat;
+    public static $language = 'france';
+
+    public function set_feat($get_feat){
+        if($get_feat){
+            $this->feat = $get_feat;
+        }
+    }
+
+    public function __construct($_name, $_surname, $_canzoni, $_featuring){
+        $this->name = $_name;
+        $this->surname = $_surname;
+        $this->canzone = $_canzoni;
+        $this->featuring = $_featuring;
+    }
+}
+
+$cantante = new Cantante('tarik', 'nabil','le monde ou rien',' nessuno');
+$cantante->set_feat('onizuka');
+$cantante->language = Cantante :: $language;
+var_dump($cantante);
 
 
