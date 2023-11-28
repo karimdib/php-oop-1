@@ -90,6 +90,51 @@ foreach($films3 as $film){
     var_dump($film);
 }
 
+class Actor {
+    public $name;
+    public $last_name;
+    public $films;
+}
+
+$actors = new Actor();
+$actors-> name = 'johhny';
+$actors-> last_name = 'debb';
+$actors-> films = [
+    'film_di_johnny:'=> [
+        'pirati dei caraibi ',
+        'pirati dei caraibi 2 ',
+        'pirati dei caraibi 3',
+        'pirati dei caraibi 4',
+        'pirati dei caraibi 5 '
+    ]
+];
 
 
+foreach($actors->films as $key =>  $film){
+    echo($key. '<br>');
+
+    foreach($film as $singolo_film){
+        $singolo = $singolo_film;
+        echo($singolo). '<br>';
+        }
+}
+
+$actors2 = new Actor();
+$actors2->name = 'leonardo ';
+$actors2-> last_name = 'dicaprio';
+$actors2-> films = ['the departed', 'shuttle island', 'titanic', 'inception'];
+
+foreach ($actors2->films as $value) {
+    var_dump($value);
+    switch($value){
+        case($value === 'the departed');
+        var_dump('rating :  8');
+    }switch($value){
+        case($value === 'titanic');
+        var_dump('rating : 6');
+    }switch($value){
+        case($value === 'inception');
+        var_dump('rating : 9');
+    }
+}
 ?>
