@@ -185,4 +185,21 @@ foreach($pugile as $lottatore){
     var_dump($lottatore);
 }
 
-?>
+
+class Cento{
+    public $number;
+}
+class Student{
+    public $name;
+    public $object;
+}
+
+$student = new Student();
+$student->name = 'mi chiamo karim  e sono nella classe :';
+$student->object = new Cento();
+$student->object->number = 106;
+
+var_dump($student->name. ' '. $student->object->number);
+
+
+
