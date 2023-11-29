@@ -58,26 +58,41 @@ class Production {
             'devi digitare un numero come parametro nella funzione ';
         }
     }
+
 }
 
 $films = new Production('pulp','english',8,'tarantino');
 $films->SetDuration(150);
 
+
+
+
+
 $contents = [
     $first = [
         $movies2 = new Movie('Django','english',8,'Tarantino', 150),
+        $movies2->SetDuration(150),
         $movies3 = new Movie('inception','english',8,'scorsese', 150),
+        $movies3->SetDuration(150),
         $movies4 = new Movie('quei bravi ragazzi','english',8,'scorsese', 150),
+        $movies4->SetDuration(150),
         $movies5 = new Movie('quasi amici','english',8,'un francese', 150),
-        $movies5 = new Movie('snacth','english',8,'un inglese', 150),
+        $movies5->SetDuration(150),
+        $movies6 = new Movie('snacth','english',8,'un inglese', 150),
+        $movies6->SetDuration(150),
 
     ],
     $second = [
         $series2 = new Serie('Scrubs','english',8,'Bill Lawrence', 150),
+        $series2->SetDuration(150),
         $series3 = new Serie('The boys','english',8,'Bill Lawrence', 150),
+        $series3->SetDuration(150),
         $series4 = new Serie('Simpson','english',8,'Bill Lawrence', 150),
+        $series4->SetDuration(150),
         $series5 = new Serie('The office','english',8,'Bill Lawrence', 150),
+        $series5->SetDuration(150),
         $series6 = new Serie('The mentalist','english',8,'Bill Lawrence', 150),
+        $series6->SetDuration(150),
     ]
 ];
 
