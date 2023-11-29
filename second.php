@@ -66,10 +66,10 @@ $films->SetDuration(150);
 $contents = [
     $first = [
         $movies2 = new Movie('Django','english',8,'Tarantino', 150),
-        $movies3 = new Movie('inception','english',8,'Tarantino', 150),
-        $movies4 = new Movie('quei bravi ragazzi','english',8,'Tarantino', 150),
-        $movies5 = new Movie('quasi amici','english',8,'Tarantino', 150),
-        $movies5 = new Movie('snacth','english',8,'Tarantino', 150),
+        $movies3 = new Movie('inception','english',8,'scorsese', 150),
+        $movies4 = new Movie('quei bravi ragazzi','english',8,'scorsese', 150),
+        $movies5 = new Movie('quasi amici','english',8,'un francese', 150),
+        $movies5 = new Movie('snacth','english',8,'un inglese', 150),
 
     ],
     $second = [

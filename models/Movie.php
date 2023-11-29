@@ -3,6 +3,7 @@
 require_once __DIR__ . '/../second.php';
 
 class Movie extends Production{
+    public $profit;
 }
 
 $movies = new Movie('Django','english',8,'Tarantino');
