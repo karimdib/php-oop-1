@@ -63,7 +63,32 @@ class Production {
 $films = new Production('pulp','english',8,'tarantino');
 $films->SetDuration(150);
 
+$contents = [
+    $first = [
+        $movies2 = new Movie('Django','english',8,'Tarantino', 150),
+        $movies3 = new Movie('inception','english',8,'Tarantino', 150),
+        $movies4 = new Movie('quei bravi ragazzi','english',8,'Tarantino', 150),
+        $movies5 = new Movie('quasi amici','english',8,'Tarantino', 150),
+        $movies5 = new Movie('snacth','english',8,'Tarantino', 150),
 
+    ],
+    $second = [
+        $series2 = new Serie('Scrubs','english',8,'Bill Lawrence', 150),
+        $series3 = new Serie('The boys','english',8,'Bill Lawrence', 150),
+        $series4 = new Serie('Simpson','english',8,'Bill Lawrence', 150),
+        $series5 = new Serie('The office','english',8,'Bill Lawrence', 150),
+        $series6 = new Serie('The mentalist','english',8,'Bill Lawrence', 150),
+    ]
+];
+
+
+foreach($first as $movie){
+    var_dump($movie);
+}
+
+foreach($second as $serie){
+    var_dump($serie);
+}
 
 
 foreach($films as $film){

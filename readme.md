@@ -5,7 +5,7 @@ Oggi proseguiamo con OOP e creiamo 2 nuove classi:
 - La classe Serie estenderà anch’essa Production aggiungendo la proprietà $season  (con relativi metodi get / set) ovvero il numero della stagione
 prima di tutto organizziamo bene il nostro progetto:
 create una cartella Models che conterrà tutti i file delle classi php (ogni classe avrà il suo file)
-- Nel file index a questo punto vi create 5 istanze di movie 5 istanze di serie.
+- Nel file second a questo punto vi create 5 istanze di movie 5 istanze di serie.
 Inserite questi 10 elementi in un unico array.
 Quindi stampate l’elenco di movie e serie nel template che avete fatto ieri, mostrando solo le proprietà in comune.
 Bonus
