@@ -70,7 +70,7 @@ $films->SetDuration(150);
 
 $contents = [
     $first = [
-        $movies2 = new Movie('Django','english',8,'Tarantino', 150),
+        $movies2 = new Movie('Django','english',8,'Tarantino',150),
         $movies2->SetDuration(150),
         $movies3 = new Movie('inception','english',8,'scorsese', 150),
         $movies3->SetDuration(150),
@@ -107,8 +107,6 @@ foreach($second as $serie){
 
 
 foreach($films as $film){
-    //echo ($film). '<br>';
-    echo($film. '<br>');
+    var_dump($film);
 }
 
-var_dump($movie);
